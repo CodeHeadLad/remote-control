@@ -11,7 +11,7 @@ input.onGesture(Gesture.ScreenUp, function () {
     basic.showIcon(IconNames.No)
 })
 input.onGesture(Gesture.TiltRight, function () {
-    radio.sendString("reverse")
+    radio.sendString("right")
     basic.showArrow(ArrowNames.East)
 })
 input.onGesture(Gesture.LogoDown, function () {
