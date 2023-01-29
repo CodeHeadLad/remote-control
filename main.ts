@@ -1,3 +1,7 @@
+input.onButtonPressed(Button.A, function () {
+    radio.sendString("centered")
+    basic.showArrow(ArrowNames.North)
+})
 input.onGesture(Gesture.LogoUp, function () {
     radio.sendString("reverse")
     basic.showArrow(ArrowNames.South)
@@ -19,6 +23,7 @@ input.onGesture(Gesture.LogoDown, function () {
     basic.showArrow(ArrowNames.North)
 })
 radio.setGroup(1)
+radio.setTransmitPower(7)
 basic.forever(function () {
 	
 })
