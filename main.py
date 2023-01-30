@@ -29,7 +29,4 @@ def on_gesture_logo_down():
 input.on_gesture(Gesture.LOGO_DOWN, on_gesture_logo_down)
 
 radio.set_group(1)
-
-def on_forever():
-    scrollbit.scroll_text("", 128, 50)
-basic.forever(on_forever)
+radio.set_transmit_power(7)
